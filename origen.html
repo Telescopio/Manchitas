@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/c3719d08c3.js" crossorigin="anonymous"></script>
+  
+  
+  
+  <title>¿Y si hago una carta más?</title>
+  <style>
+    body {
+      font-family:"HELVETICA", Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: lightpink;
+      background-image: url(https://img.freepik.com/vector-premium/fondo-corazones-confeti-diferentes-colores-san-valentin-patron-costuras_175838-3389.jpg);
+    }
+    #carta {
+      display: none;
+      animation: fadeIn 2s,
+      ease-in-out;
+    }
+    @keyframes fadeIn{
+      from{
+        opacity: 0;
+      }
+      to{
+        opacity: 1;}
+      }
+      h1{
+        animation:pulse 1.5s infinite;
+      }
+      @keyframes pulse{
+        0%, 100%{
+          transform: scale(1);
+        }
+        50%{
+          transform:scale(1.1);
+        }
+      }
+      #botonCarta i{
+        margin-right: 5px;
+        color:#ff3366
+      }
+    
+  </style>
+</head>
+<body>  
+  <h1>¡Feliz 14 de febrero :b!</h1>
+  <p>"Si vuelve a tener sentido, que yo vuelva a estar contigo"</p>
+  <p>Belleza...</p>
+
+  <button onclick="toggleCarta()"
+  id = "botonCarta">
+  <i class="fa-solid fa-heart"></i> <span
+  id="estadoBoton">Mostrar Carta</span></button>
+  
+
+  <div id="carta">
+    <p>Decidí no hacerte más cartas, no más allá que la de “Debut y Despedida”, lo sé, aborrezco mucho esta fecha, la odio con todo mi ser, tal vez sea por el marketing capitalista que maneja o por ver a todos felices y derrochando cariño, muy en el fondo de mi creo que es por el resentimiento que le tengo al amor y mi historia con este, me cuesta mucho abrirme, y mucho más escribirte, creo que no tengo la confianza en plenitud, me preocupa que pueda pasar o quien pueda leer esto, no es con coraje, ni con decepción, es con amor, si probablemente ya lo estás leyendo es porque trabajé arduamente para programarlo, porque me nace del corazón darte un detalle que, aunque insignificante puede ser, me llena de orgullo dar; me serviste de inspiración. No más por lo complejo de la carta, siendo sinceros sigo pensando que no es la gran cosa, pero al igual que tú, puede ser un reflejo de mi avance y crecimiento como profesionista.</p>
+    <p> </p>
+    <p>Gracias por estar aquí conmigo, de la manera que sea; gracias, para los dos ha sido complejo hablarnos, e incluso tratarnos, hemos sufrido tanto en tan poco que nunca sabemos cómo reaccionar, más bien, nunca sé cómo reaccionar, estoy ciego al momento de intentar leerte, tal vez sean los sentimientos los que me nublan el juicio, me encariñé tan rápido contigo que todavía sufro de estragos, todavía te quiero, todavía te quiero conmigo. No quiero sonar hipócrita, y mucho menos dejar como antecedente esto para después arrepentirme, no es la intención y nunca lo fue, ni con esta carta ni con la del año pasado. Desgraciadamente encontramos gente en común que se encargó de arruinar el proceso, que saboteó el crecimiento y finalmente hundió y enterró el principio de una relación, tal vez tenga sus motivos, y espero de convicción que Dios la perdone, porque por mi parte no habrá cambio, así mismo espero, esto a la larga no vuelva a afectarnos.</p>
+    <p> Tal vez me gustaría citarla al decir que “no busco victimizarme”, simplemente quiero contarte mis problemas por una vez en la vida, escribo esto como una forma de hablar contigo, de decir lo que no me nace en persona, tengo tanto que decir y tan poco tiempo para hacerlo que resulta asfixiante, por el lugar, por las personas, por el tiempo e incluso por el mismo miedo al rechazo, todos le tenemos miedo a lo que no podemos ver, escuchar, o este caso predecir</p>
+    <p>Lamento que esta carta se haya convertido en un confesionario y no en la típica muestra de cariño repetitivo, pero es lo más sincero que he podido darte, es un acto de amor que trabajé para mostrarte, me siento seguro al mostrarte mis logros, y espero de verdad te guste, no quiero nada más que sentirme satisfecho con mi trabajo, te quiero mucho Isa, con toda mi alma.</p>
+    <p></p>
+    <p>"A little time with you is all that I get</p>
+    <p>That's all we need because it's all we can take"</p>
+ 
+  </div>
+
+
+  <script>
+    function toggleCarta() {
+      var carta=
+      document. getElementById('carta');
+      var botton =
+      document.getElementById('botonCarta');
+      var estadoBoton=
+      document.getElementById('estadoBoton');
+
+      if(carta.style.display === 'none'){
+        carta.style.display = 'block';
+        estadoBoton.innerText = 'Ocultar carta';
+      } else{
+        carta.style.display= 'none';
+        estadoBoton.innerText='Mostrar Carta';
+      }
+    }
+    
+  </script>
+  <audio controls autoplay>
+    <source src= "brel.mp3" type= 'audio/mp3'>
+
+  </audio>
+</body>
+</html>
+
